@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>שם המשחק</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="images/LoliHead.png" /> <!--הלוגו של המשחק שלכם-->
+                <p>המירוץ של לולי</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h1>אודות</h1>
+            <div id="loliLOGO" alt="לוגו דמות ראשית"></div>
+            <p id="uxName">אפיון ופיתוח : לינוי לוי וטל שנקר</p>
+            <p id="nameCourceTitle">פותח במסגרת פרויקט בקורסים:</p>
+            <p id="nameOFcource">סביבות לימוד אינטראקטיביות 1 & אנימציה, תשע"ט</p>
+
+            <div id="logoHit" alt="לוגו מכון טכנולוגי חולון"></div>
+
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>עליכם להשתמש במקשי החצים על מנת לנוע ימינה או שמאלה בהתאם</p>
+            <p>בכדי לשלוט על המהירות השתמשו במקשי החצים מעלה ומטה</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="LOLI.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
